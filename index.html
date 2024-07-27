@@ -12,11 +12,11 @@
 
     <div class="container">
         <div class="card">
-            <div class="card-inner">
+            <div class="card-inner" id="rotate">
                 <div class="front">
                     <h2>Sarthak Dawane</h2>
                     <p>Web Developer, India</p>
-                    <button>Hover me</button>
+                    <button id="clickme">Hover me</button>
                 </div>
                 <div class="back">
                     <img src="Asset/waving-hand.png" alt="not loading">
@@ -40,13 +40,21 @@
 
                     <div class="row">
                         <button>Follow</button>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/sarthak_sd143?igshid=MXE0YjM4d2lxeGVyZw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/SarthakDawane"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+    let clickme =  document.getElementById('clickme');
+    
+    if(screen.availWidth < 450 ){
+        clickme.innerHTML="Click Me";}
+    </script>
     
 </body>
 </html>
